@@ -12,6 +12,8 @@ jobs:
     - name: Set up Ruby
       uses: ruby/setup-ruby@v1
 
+    - run: bundle install
+
     - name: Run Danger
       run: bundle exec danger
       env:
